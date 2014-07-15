@@ -108,7 +108,7 @@ public class BigIntegerTest
 	{
 		int i =0;
 		BigInteger bigInt1 = new BigInteger(7);
-        BigInteger bigInt2 = new BigInteger(7);
+        	BigInteger bigInt2 = new BigInteger(7);
 		assertEquals(i, bigInt1.compareTo(bigInt2));
 	}
 	
@@ -117,7 +117,7 @@ public class BigIntegerTest
 	{
 		int i = -1;
 		BigInteger bigInt1 = new BigInteger(6);
-        BigInteger bigInt2 = new BigInteger(7);
+        	BigInteger bigInt2 = new BigInteger(7);
 		assertEquals(i, bigInt1.compareTo(bigInt2));
 	}
 	
@@ -126,7 +126,7 @@ public class BigIntegerTest
 	{
 		int i =1;
 		BigInteger bigInt1 = new BigInteger(7);
-        BigInteger bigInt2 = new BigInteger(6);
+        	BigInteger bigInt2 = new BigInteger(6);
 		assertEquals(i, bigInt1.compareTo(bigInt2));
 	}
 	
