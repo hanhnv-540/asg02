@@ -102,4 +102,40 @@ public class BigIntegerTest
         
         assertEquals(new BigInteger("111111111111111111102"), difference);
     }
+	
+	@Test
+	public void testcomparebangnhau()
+	{
+		int i =0;
+		BigInteger bigInt1 = new BigInteger(7);
+        BigInteger bigInt2 = new BigInteger(7);
+		assertEquals(i, bigInt1.compareTo(bigInt2));
+	}
+	
+	@Test
+	public void testcomparenhohon()
+	{
+		int i = -1;
+		BigInteger bigInt1 = new BigInteger(6);
+        BigInteger bigInt2 = new BigInteger(7);
+		assertEquals(i, bigInt1.compareTo(bigInt2));
+	}
+	
+	@Test
+	public void testcomparelonhon()
+	{
+		int i =1;
+		BigInteger bigInt1 = new BigInteger(7);
+        BigInteger bigInt2 = new BigInteger(6);
+		assertEquals(i, bigInt1.compareTo(bigInt2));
+	}
+	
+	@Test
+	public void testBigIntegerClone()
+	{
+		BigInteger bigInt1 = new BigInteger(10);
+		BigInteger bigInt2 = new BigInteger(10);
+		BigInteger big = bigInt1.clone();
+		assertEquals(bigInt2, big);
+	}
 }

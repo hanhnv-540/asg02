@@ -41,4 +41,22 @@ public class BigInteger
 		this.bigInt -= other.getBigInt();
 		return this;
 	}
+	
+	public int compareTo(BigInteger other){
+		if (this.getBigInt() == other.getBigInt()){
+		return 0;
+		}
+		if (this.getBigInt() < other.getBigInt()){
+		return -1;
+		}
+		else{
+		return 1;
+		}
+	}
+	
+	public BigInteger clone(){
+		BigInteger big = new BigInteger(2);
+		big = this;
+		return big;
+	}
 }
